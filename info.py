@@ -7,7 +7,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'StarkMV')
 API_ID = int(environ.get('API_ID', '7272529'))
 API_HASH = environ.get('API_HASH', '68532ee254128bd6f169a1b32bde7db5')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8343203958:AAGxi7TqaDgBNb1aXE6R0xlUW5gt4oWNfn0")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 PORT = environ.get("PORT", "8080")
