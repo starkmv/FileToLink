@@ -20,14 +20,14 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://friendly-lynne-sivamani-a0c65681.koyeb.app")
+URL = environ.get("URL", "https://friendly-lynne-sivamani-a0c65681.koyeb.app/")
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002793223546'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '700871056').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rockdmbiot:81Yyppfch4dRjgcY@cluster0.z2tuvdu.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rockdmbiot:81Yyppfch4dRjgcY@cluster0.z2tuvdu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "StarkMV")
 
 # Shortlink Info
